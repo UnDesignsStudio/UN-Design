@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UN Design – Creative Web Agency</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@10/swiper-bundle.min.css">
+  <style>
+    .parallax-section {
+      padding: 60px 20px;
+      background-color: #f5f5f5;
+      text-align: center;
+    }
+    .swiper {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 300px;
+      height: 400px;
+    }
+    .parallax-title {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+    <header class="navbar">
+      <div class="logo">UN Design</div>
+      <nav>
+        <a href="#about" class="nav-link" data-en="About" data-sr="O Nama">About</a>
+        <a href="#services" class="nav-link" data-en="carousel" data-sr="Usluge">Services</a>
+        <a href="#schedule" class="nav-link" data-en="Schedule" data-sr="Zakaži">Schedule</a>
+        <a href="#contact" class="nav-link" data-en="Contact" data-sr="Kontakt">Contact</a>
+      </nav>
+      <button id="langToggle">🇺🇸 EN</button>
+    </header>
+
+  <section class="hero">
+    <h1 data-en="We build modern websites" data-sr="Pravimo moderne sajtove.">We build modern websites</h1>
+    <p data-en="Creative. Functional. Unique." data-sr="Kreativni. Funkcionalni. Jedinstveni.">Creative. Functional. Unique.</p>
+    <a href="#schedule" class="btn" data-en="Book a Free Call" data-sr="Zakažite Besplatan Poziv">Book a Free Call</a>
+  </section>
+
+  <section>
+    <div class="container">
+        <div class="carousel">
+            <input type="radio" name="slides" checked="checked" id="slide-1">
+            <input type="radio" name="slides" id="slide-2">
+            <input type="radio" name="slides" id="slide-3">
+            <input type="radio" name="slides" id="slide-4">
+            <input type="radio" name="slides" id="slide-5">
+            <input type="radio" name="slides" id="slide-6">
+            <ul class="carousel__slides">
+                <li class="carousel__slide">
+                    <figure>
+                        <div>
+                            <img src="https://picsum.photos/id/1041/800/450" alt="">
+                        </div>
+                        <figcaption>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            <span class="credit">Photo: Tim Marshall</span>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="carousel__slide">
+                    <figure>
+                        <div>
+                            <img src="https://picsum.photos/id/1043/800/450" alt="">
+                        </div>
+                        <figcaption>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            <span class="credit">Photo: Christian Joudrey</span>                            
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="carousel__slide">
+                    <figure>
+                        <div>
+                            <img src="https://picsum.photos/id/1044/800/450" alt="">
+                        </div>
+                        <figcaption>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            <span class="credit">Photo: Steve Carter</span>                            
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="carousel__slide">
+                    <figure>
+                        <div>
+                            <img src="https://picsum.photos/id/1045/800/450" alt="">
+                        </div>
+                        <figcaption>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            <span class="credit">Photo: Aleksandra Boguslawska</span>                            
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="carousel__slide">
+                    <figure>
+                        <div>
+                            <img src="https://picsum.photos/id/1049/800/450" alt="">
+                        </div>
+                        <figcaption>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            <span class="credit">Photo: Rosan Harmens</span>                            
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="carousel__slide">
+                    <figure>
+                        <div>
+                            <img src="https://picsum.photos/id/1052/800/450" alt="">
+                        </div>
+                        <figcaption>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            <span class="credit">Photo: Annie Spratt</span>                            
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>    
+            <ul class="carousel__thumbnails">
+                <li>
+                    <label for="slide-1"><img src="https://picsum.photos/id/1041/150/150" alt=""></label>
+                </li>
+                <li>
+                    <label for="slide-2"><img src="https://picsum.photos/id/1043/150/150" alt=""></label>
+                </li>
+                <li>
+                    <label for="slide-3"><img src="https://picsum.photos/id/1044/150/150" alt=""></label>
+                </li>
+                <li>
+                    <label for="slide-4"><img src="https://picsum.photos/id/1045/150/150" alt=""></label>
+                </li>
+                <li>
+                    <label for="slide-5"><img src="https://picsum.photos/id/1049/150/150" alt=""></label>
+                </li>
+                <li>
+                    <label for="slide-6"><img src="https://picsum.photos/id/1052/150/150" alt=""></label>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+  <section id="schedule">
+    <h2 data-en="Book a Meeting" data-sr="Zakažite Sastanak">Book a Meeting</h2>
+    <p data-en="Choose a date and time below to schedule a free call with us." 
+       data-sr="Izaberite datum i vreme da zakažete besplatan poziv.">
+      Choose a date and time below to schedule a free call with us.
+    </p>
+    <div class="calendar-container">
+      <iframe
+        src="https://koalendar.com/e/meet-with-un-design?embed=true"
+        width="100%"
+        height="600"
+        frameborder="0"
+        scrolling="no">
+      </iframe>
+    </div>    
+  </section>
+
+  <section id="kontakt" class="contact-section">
+    <div class="contact-container">
+      <h2>Kontaktiraj nas</h2>
+      <form class="contact-form" action="mailto:un.studio.rs@gmail.com" method="POST" enctype="text/plain">
+        <input type="text" name="name" placeholder="Vaše ime" required />
+        <input type="email" name="email" placeholder="Vaš email" required />
+        <textarea name="message" placeholder="Poruka" required></textarea>
+        <button type="submit">Pošalji</button>
+      </form>
+      <div class="contact-info">
+        <p>Email: <a href="mailto:un.studio.rs@gmail.com">un.studio.rs@gmail.com</a></p>
+        <p>Instagram: <a href="https://www.instagram.com/un.design.studio/" target="_blank">@un.design.studio</a></p>
+      </div>
+    </div>
+  </section>
+  
+<footer id="footer" class="site-footer">
+  <script>
+    let currentLang = 'en';
+    document.getElementById('langToggle').addEventListener('click', () => {
+      currentLang = currentLang === 'en' ? 'sr' : 'en';
+      document.getElementById('langToggle').textContent = currentLang === 'en' ? '🇺🇸 EN' : '🇷🇸 SR';
+      document.querySelectorAll('[data-en]').forEach(el => {
+        el.textContent = el.getAttribute(`data-${currentLang}`);
+      });
+    });
+  </script>
+  <script src="https://unpkg.com/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.mySwiper', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
+  <div class="footer-content">
+    <div class="footer-left">
+      <h3>UN Design</h3>
+      <p data-en="We create beautiful and effective websites for modern brands." 
+         data-sr="Pravimo lepe i funkcionalne sajtove za moderne brendove.">
+        We create beautiful and effective websites for modern brands.
+      </p>
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/un.design.studio/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="mailto:un.studio.rs@gmail.com" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+    <div class="footer-links">
+      <h4 data-en="Quick Links" data-sr="Brzi Linkovi">Quick Links</h4>
+      <ul>
+        <li><a href="#about" data-en="About" data-sr="O Nama">About</a></li>
+        <li><a href="#services" data-en="Services" data-sr="Usluge">Services</a></li>
+        <li><a href="#schedule" data-en="Schedule" data-sr="Zakaži">Schedule</a></li>
+        <li><a href="#contact" data-en="Contact" data-sr="Kontakt">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p data-en="© 2025 UN Design. All rights reserved." 
+       data-sr="© 2025 UN Design. Sva prava zadržana.">
+       © 2025 UN Design. All rights reserved.
+    </p>
+  </div>
+</footer>
+<script>
+  const ring = document.getElementById("ring");
+  let angle = 0;
+  const numImages = ring.children.length;
+  const deg = 360 / numImages;
+
+  for (let i = 0; i < numImages; i++) {
+    ring.children[i].style.transform = `rotateY(${i * deg}deg) translateZ(400px)`;
+  }
+
+  function rotateRing() {
+    angle += deg;
+    ring.style.transform = `rotateY(-${angle}deg)`;
+  }
+
+  setInterval(rotateRing, 3000);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,454 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #000;
+  color: #f2f2f2;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  color: #ccc;
+  transition: 0.3s ease;
+}
+a:hover {
+  color: #fff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  background: #000;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(255,255,255,0.05);
+}
+.navbar .logo {
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: #fff;
+}
+.navbar nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #ccc;
+  font-weight: 500;
+}
+.navbar nav a:hover {
+  color: #fff;
+}
+
+#langToggle {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-weight: bold;
+  color: #ccc;
+}
+
+section {
+  padding: 4rem 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  animation: fadeInUp 0.8s ease both;
+}
+
+.hero {
+  text-align: center;
+  padding: 6rem 2rem;
+  background: #000;
+}
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #bbb;
+}
+
+.btn {
+  background: #f2f2f2;
+  color: #000;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+ul li {
+  padding: 0.5rem 0;
+  color: #ccc;
+}
+
+.site-footer {
+  background-color: #111;
+  color: #bbb;
+  font-family: 'Poppins', sans-serif;
+  padding: 40px 20px 20px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-left h3,
+.footer-links h4 {
+  color: #fff;
+}
+
+.footer-left p {
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+  color: #bbb;
+}
+
+.footer-socials a {
+  margin-right: 12px;
+  font-size: 1.4rem;
+  color: #bbb;
+  transition: color 0.3s ease;
+}
+.footer-socials a:hover {
+  color: #fff;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-links ul li {
+  margin-bottom: 8px;
+}
+.footer-links ul li a {
+  color: #bbb;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+.footer-links ul li a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 30px;
+  border-top: 1px solid #333;
+  padding-top: 15px;
+}
+
+/* SERVICES */
+#services {
+  padding: 60px 20px;
+  text-align: center;
+}
+.service-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 30px;
+}
+.service-card {
+  background: #111;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(255,255,255,0.08);
+  overflow: hidden;
+  width: 100%;
+  max-width: 450px;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+.service-card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #333;
+  object-fit: cover;
+}
+.service-card div {
+  padding: 20px;
+  text-align: left;
+  color: #ccc;
+}
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+  .service-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* FADE ANIMATION */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* CAROUSEL 3D */
+.stage, .ring, .img {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  user-select: none;
+}
+.stage {
+  position: relative;
+  height: 500px;
+  margin-top: 80px;
+  overflow: hidden;
+  background: #000;
+}
+.container-carousel {
+  perspective: 2000px;
+  width: 300px;
+  height: 400px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.ring {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+.img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  transition: opacity 0.3s ease;
+}
+
+/* SWIPER.JS (PARALLAX GALLERY) */
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 400px;
+}
+.parallax-section {
+  padding: 60px 20px;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+.parallax-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+/* IMAGE GALLERY SECTION */
+.carousel {
+  position: relative;
+  max-width: 960px;
+  margin: 100px auto;
+  padding: 0 20px;
+}
+
+.carousel__slides,
+.carousel__thumbnails {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.carousel__slides {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 30px 40px rgba(0, 0, 0, 0.2);
+}
+
+.carousel__slide {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel__slide figure {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel__slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.carousel__slide figcaption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  font-size: 1rem;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.carousel__slide .credit {
+  display: block;
+  font-size: 0.8rem;
+  color: #ddd;
+  margin-top: 0.5rem;
+}
+
+input[name="slides"] {
+  display: none;
+}
+
+input[name="slides"]:nth-of-type(1):checked ~ .carousel__slides li:nth-child(1),
+input[name="slides"]:nth-of-type(2):checked ~ .carousel__slides li:nth-child(2),
+input[name="slides"]:nth-of-type(3):checked ~ .carousel__slides li:nth-child(3),
+input[name="slides"]:nth-of-type(4):checked ~ .carousel__slides li:nth-child(4),
+input[name="slides"]:nth-of-type(5):checked ~ .carousel__slides li:nth-child(5),
+input[name="slides"]:nth-of-type(6):checked ~ .carousel__slides li:nth-child(6) {
+  opacity: 1;
+  position: relative;
+}
+
+.carousel__thumbnails {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.carousel__thumbnails img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.carousel__thumbnails img:hover {
+  transform: scale(1.05);
+}
+
+.contact-section {
+  background-color: #111;
+  padding: 80px 20px;
+  padding-bottom: 100px; /* Dodaje razmak ispod kontakt forme */
+  color: #fff;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.contact-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.contact-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #333; /* Dodat okvir da se lakše vidi */
+  border-radius: 8px;
+  background-color: #1a1a1a;
+  color: #fff;
+  font-size: 1rem;
+  transition: border 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border: 1px solid #555;
+  outline: none;
+}
+
+.contact-form button {
+  background-color: #fff;
+  color: #000;
+  padding: 15px;
+  font-weight: bold;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #e6e6e6;
+  color: #111;
+}
+
+.contact-info {
+  margin-top: 30px;
+  font-size: 1rem;
+}
+
+.contact-info a {
+  color: #fff;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+  color: #aaa;
+}
