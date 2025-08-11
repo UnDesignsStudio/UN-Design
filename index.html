@@ -3,262 +3,440 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>UN Design – Creative Web Agency</title>
+  <title>UN Design – High-Impact Web Design Agency</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <link rel="stylesheet" href="https://unpkg.com/swiper@10/swiper-bundle.min.css">
-  <style>
-    .parallax-section {
-      padding: 60px 20px;
-      background-color: #f5f5f5;
-      text-align: center;
-    }
-    .swiper {
-      width: 100%;
-      padding-top: 50px;
-      padding-bottom: 50px;
-    }
-    .swiper-slide {
-      background-position: center;
-      background-size: cover;
-      width: 300px;
-      height: 400px;
-    }
-    .parallax-title {
-      font-size: 2rem;
-      margin-bottom: 20px;
-    }
-  </style>
 </head>
 <body>
-    <header class="navbar">
+  <header class="navbar">
+    <div class="container navbar-inner">
       <div class="logo">UN Design</div>
-      <nav>
-        <a href="#about" class="nav-link" data-en="About" data-sr="O Nama">About</a>
-        <a href="#services" class="nav-link" data-en="carousel" data-sr="Usluge">Services</a>
-        <a href="#schedule" class="nav-link" data-en="Schedule" data-sr="Zakaži">Schedule</a>
-        <a href="#contact" class="nav-link" data-en="Contact" data-sr="Kontakt">Contact</a>
+      <nav class="nav-links">
+        <a href="#portfolio" class="nav-link" data-en="Portfolio" data-sr="Portfolio">Portfolio</a>
+        <a href="#about" class="nav-link" data-en="About" data-sr="O nama">About</a>
+        <a href="#pricing" class="nav-link" data-en="Pricing" data-sr="Cenovnik">Pricing</a>
       </nav>
-      <button id="langToggle">🇺🇸 EN</button>
-    </header>
+      <div class="nav-actions">
+        <button id="langToggle" class="lang-toggle">
+          <span class="lang-text">EN</span>
+          <span class="lang-flag">🇺🇸</span>
+        </button>
+        <a href="#schedule" class="cta-button" data-en="Schedule a call" data-sr="Zakaži poziv">Schedule a call</a>
+      </div>
+    </div>
+  </header>
 
-  <section class="hero">
-    <h1 data-en="We build modern websites" data-sr="Pravimo moderne sajtove.">We build modern websites</h1>
-    <p data-en="Creative. Functional. Unique." data-sr="Kreativni. Funkcionalni. Jedinstveni.">Creative. Functional. Unique.</p>
-    <a href="#schedule" class="btn" data-en="Book a Free Call" data-sr="Zakažite Besplatan Poziv">Book a Free Call</a>
-  </section>
-
-  <section>
-    <div class="container">
-        <div class="carousel">
-            <input type="radio" name="slides" checked="checked" id="slide-1">
-            <input type="radio" name="slides" id="slide-2">
-            <input type="radio" name="slides" id="slide-3">
-            <input type="radio" name="slides" id="slide-4">
-            <input type="radio" name="slides" id="slide-5">
-            <input type="radio" name="slides" id="slide-6">
-            <ul class="carousel__slides">
-                <li class="carousel__slide">
-                    <figure>
-                        <div>
-                           <img src="img/mockups/fon nakit.png" alt="Opis slike">
-
-                        </div>
-                        <figcaption>
-                            Vaš nakit na elegantnom web prikazu.
-
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="carousel__slide">
-                    <figure>
-                        <div>
-                            <img src="img/mockups/laptop ciglice.png" alt="Opis slike">
-                        </div>
-                        <figcaption>
-                            Responsive dizajn za savršen vizuelni doživljaj.                           
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="carousel__slide">
-                    <figure>
-                        <div>
-                           <img src="img/mockups/komp ledi restoran.png" alt="Opis slike">
-                        </div>
-                        <figcaption>
-                            Restoran koji mami pogled i ukus – naš tim je kreirao sajt koji kombinuje vrhunski dizajn i funkcionalnost. Fokus na korisničko iskustvo, mobilnu optimizaciju i atraktivne vizuale.                           
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="carousel__slide">
-                    <figure>
-                        <div>
-                           <img src="img/mockups/laptop maske.png" alt="Opis slike">
-                        </div>
-                        <figcaption>
-                            Kombinacija trendi dizajna i jednostavne navigacije. Kreirali smo online iskustvo koje jasno prikazuje ponudu i olakšava kupovinu na svim uređajima.                          
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="carousel__slide">
-                    <figure>
-                        <div>
-                           <img src="img/mockups/laptop arch.png" alt="Opis slike">
-                        </div>
-                        <figcaption>
-                            Ekskluzivan odmor zaslužuje ekskluzivno digitalno iskustvo. Naš tim je kreirao rešenje koje inspiriše goste da rezervišu odmah.                         
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="carousel__slide">
-                    <figure>
-                        <div>
-                            <img src="img/mockups/komp brunchh.png" alt="Opis slike">
-                        </div>
-                        <figcaption>
-                            Kreirali smo vizuelno primamljiv i intuitivan sajt koji poziva korisnike da istraže najbolje brunch destinacije u gradu.                           
-                        </figcaption>
-                    </figure>
-                </li>
-            </ul>    
-            <ul class="carousel__thumbnails">
-              <li>
-                    <label for="slide-1"><<img src="img/mockups/fon nakit.png" alt=""></label>
-                </li>
-                <li>
-                    <label for="slide-2"><<img src="img/mockups/laptop ciglice.png" alt=""></label>
-                </li>
-                <li>
-                    <label for="slide-3"><<img src="img/mockups/komp ledi restoran.png" alt=""></label>
-                </li>
-                <li>
-                    <label for="slide-4"><img src="img/mockups/laptop maske.png" alt=""></label>
-                </li>
-                <li>
-                    <label for="slide-5"><img src="img/mockups/laptop arch.png" alt=""></label>
-                </li>
-                <li>
-                    <label for="slide-6"><img src="img/mockups/komp brunchh.png" alt=""></label>
-                </li>
-            </ul>
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">
+          <span class="title-line" data-en="UN Design" data-sr="UN Design">UN Design</span>
+        </h1>
+        <p class="hero-subtitle" data-en="Built for startups, agencies, and brands that need more than just a pretty site — they need impact." data-sr="Napravljeno za startupove, agencije i brendove kojima treba više od samo lepog sajta — treba im uticaj.">
+          Built for startups, agencies, and brands that need more than just a pretty site — they need impact.
+        </p>
+        <div class="hero-buttons">
+          <a href="#schedule" class="btn-primary" data-en="Schedule a call" data-sr="Zakaži poziv">Schedule a call</a>
+          <a href="#portfolio" class="btn-secondary" data-en="Start today" data-sr="Započni danas">Start today</a>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-  <section id="schedule">
-    <h2 data-en="Book a Meeting" data-sr="Zakažite Sastanak">Book a Meeting</h2>
-    <p data-en="Choose a date and time below to schedule a free call with us." 
-       data-sr="Izaberite datum i vreme da zakažete besplatan poziv.">
-      Choose a date and time below to schedule a free call with us.
-    </p>
-    <div class="calendar-container">
-      <iframe
-        src="https://koalendar.com/e/meet-with-un-design?embed=true"
-        width="100%"
-        height="600"
-        frameborder="0"
-        scrolling="no">
-      </iframe>
-    </div>    
-  </section>
+    <!-- Brand Impact Section -->
+    <section class="brand-impact">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="title-line" data-en="Make Your Brand" data-sr="Učini svoj brend">Make Your Brand</span>
+          <span class="title-line" data-en="Impossible to Ignore." data-sr="Nemogućim za ignorisanje.">Impossible to Ignore.</span>
+        </h2>
+        <p class="section-subtitle" data-en="With a site that speaks for itself." data-sr="Sa sajtom koji govori sam za sebe.">With a site that speaks for itself.</p>
+        <a href="#schedule" class="btn-primary" data-en="Schedule a Call" data-sr="Zakaži poziv">Schedule a Call</a>
+      </div>
+    </section>
 
-  <section id="kontakt" class="contact-section">
-    <div class="contact-container">
-      <h2>Kontaktiraj nas</h2>
-      <form class="contact-form" action="mailto:un.studio.rs@gmail.com" method="POST" enctype="text/plain">
-        <input type="text" name="name" placeholder="Vaše ime" required />
-        <input type="email" name="email" placeholder="Vaš email" required />
-        <textarea name="message" placeholder="Poruka" required></textarea>
-        <button type="submit">Pošalji</button>
-      </form>
-      <div class="contact-info">
-        <p>Email: <a href="mailto:un.studio.rs@gmail.com">un.studio.rs@gmail.com</a></p>
-        <p>Instagram: <a href="https://www.instagram.com/un.design.studio/" target="_blank">@un.design.studio</a></p>
+    <!-- Agency Section -->
+    <section class="agency-section">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="title-line" data-en="Award‑Winning" data-sr="Nagradjivana">Award‑Winning</span>
+          <span class="title-line" data-en="Web Design Agency" data-sr="Web Dizajn Agencija">Web Design Agency</span>
+        </h2>
+        <div class="agency-content">
+          <p class="agency-description">
+            <strong data-en="UN Design" data-sr="UN Design">UN Design</strong> <span data-en="is a Certified Framer Expert agency." data-sr="je certificirana Framer Expert agencija.">is a Certified Framer Expert agency.</span><br>
+            <span data-en="We craft fast, premium websites for startups, agencies, and global brands — combining strategy, design, and speed to launch digital experiences that deliver results." data-sr="Pravimo brze, premium sajtove za startupove, agencije i globalne brendove — kombinujući strategiju, dizajn i brzinu za pokretanje digitalnih iskustava koja donose rezultate.">We craft fast, premium websites for startups, agencies, and global brands — combining strategy, design, and speed to launch digital experiences that deliver results.</span>
+          </p>
+          <a href="#pricing" class="btn-secondary" data-en="View Pricing" data-sr="Pogledaj cene">View Pricing</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Gallery -->
+    <section class="portfolio-section" id="portfolio">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="title-line" data-en="A Gallery of" data-sr="Galerija">A Gallery of</span>
+          <span class="title-line" data-en="Performance & Design" data-sr="Performansi i Dizajna">Performance & Design</span>
+        </h2>
+        <p class="section-subtitle" data-en="Built for startups, creatives, and growing brands — these sites reflect our process: fast, sharp, and made to stand out." data-sr="Napravljeno za startupove, kreativce i rastuće brendove — ovi sajtovi odražavaju naš proces: brz, oštar i napravljen da se ističe.">
+          Built for startups, creatives, and growing brands — these sites reflect our process: fast, sharp, and made to stand out.
+        </p>
+        
+        <div class="portfolio-grid">
+          <div class="portfolio-item">
+            <div class="portfolio-image">
+              <img src="https://picsum.photos/id/1041/600/400" alt="Project 1">
+            </div>
+            <div class="portfolio-info">
+              <h3>AGENIUS</h3>
+              <div class="portfolio-tags">
+                <span data-en="Business" data-sr="Biznis">Business</span>
+                <span data-en="SaaS" data-sr="SaaS">SaaS</span>
+                <span data-en="Agency" data-sr="Agencija">Agency</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="portfolio-item">
+            <div class="portfolio-image">
+              <img src="https://picsum.photos/id/1043/600/400" alt="Project 2">
+            </div>
+            <div class="portfolio-info">
+              <h3>MAVERICK</h3>
+              <div class="portfolio-tags">
+                <span data-en="Agency" data-sr="Agencija">Agency</span>
+                <span data-en="Business" data-sr="Biznis">Business</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="portfolio-item">
+            <div class="portfolio-image">
+              <img src="https://picsum.photos/id/1044/600/400" alt="Project 3">
+            </div>
+            <div class="portfolio-info">
+              <h3>PAYER</h3>
+              <div class="portfolio-tags">
+                <span data-en="Mobile App" data-sr="Mobilna Aplikacija">Mobile App</span>
+                <span data-en="Business" data-sr="Biznis">Business</span>
+                <span data-en="SaaS" data-sr="SaaS">SaaS</span>
+                <span data-en="Software" data-sr="Softver">Software</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="portfolio-item">
+            <div class="portfolio-image">
+              <img src="https://picsum.photos/id/1045/600/400" alt="Project 4">
+            </div>
+            <div class="portfolio-info">
+              <h3>ADZEN</h3>
+              <div class="portfolio-tags">
+                <span data-en="Agency" data-sr="Agencija">Agency</span>
+                <span data-en="Business" data-sr="Biznis">Business</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="load-more">
+          <button class="btn-secondary" data-en="Load More" data-sr="Učitaj više">Load More</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="about-section" id="about">
+      <div class="container">
+        <h2 class="section-title" data-en="What We Actually Do." data-sr="Šta zapravo radimo.">What We Actually Do.</h2>
+        <p class="section-subtitle" data-en="From creative design to technical solutions, our services define industry excellence" data-sr="Od kreativnog dizajna do tehničkih rešenja, naše usluge definišu izvrsnost industrije">
+          From creative design to technical solutions, our services define industry excellence
+        </p>
+        
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-content">
+              <h3 data-en="Framer Development" data-sr="Framer Razvoj">Framer Development</h3>
+              <p data-en="We build high-performance, responsive websites directly in Framer — with custom animations, CMS logic, and interactions. Perfect for brands that want full control, fast delivery, and zero compromise." data-sr="Pravimo visokoučinkovite, responzivne sajtove direktno u Framer-u — sa prilagođenim animacijama, CMS logikom i interakcijama. Savršeno za brendove koji žele punu kontrolu, brzu isporuku i nula kompromisa.">
+                We build high-performance, responsive websites directly in Framer — with custom animations, CMS logic, and interactions. Perfect for brands that want full control, fast delivery, and zero compromise.
+              </p>
+            </div>
+            <div class="service-image">
+              <img src="https://picsum.photos/id/1049/400/300" alt="Framer Development">
+            </div>
+          </div>
+          
+          <div class="service-card">
+            <div class="service-content">
+              <h3 data-en="Custom Web Design" data-sr="Prilagođeni Web Dizajn">Custom Web Design</h3>
+              <p data-en="Strategic design that converts. We create user experiences that guide visitors toward your goals while maintaining the highest standards of visual excellence and brand consistency." data-sr="Strateški dizajn koji konvertuje. Pravimo korisnička iskustva koja vode posetioce ka vašim ciljevima dok održavaju najviše standarde vizuelne izvrsnosti i konzistentnosti brenda.">
+                Strategic design that converts. We create user experiences that guide visitors toward your goals while maintaining the highest standards of visual excellence and brand consistency.
+              </p>
+            </div>
+            <div class="service-image">
+              <img src="https://picsum.photos/id/1052/400/300" alt="Custom Web Design">
+            </div>
+          </div>
+          
+          <div class="service-card">
+            <div class="service-content">
+              <h3 data-en="Ongoing Web Support" data-sr="Kontinuirana Web Podrška">Ongoing Web Support</h3>
+              <p data-en="Keep your website performing at its best with our maintenance and support services. From updates to optimizations, we ensure your digital presence stays ahead of the curve." data-sr="Održavajte svoj sajt da radi najbolje sa našim uslugama održavanja i podrške. Od ažuriranja do optimizacija, osiguravamo da vaša digitalna prisutnost ostane ispred krivulje.">
+                Keep your website performing at its best with our maintenance and support services. From updates to optimizations, we ensure your digital presence stays ahead of the curve.
+              </p>
+            </div>
+            <div class="service-image">
+              <img src="https://picsum.photos/id/1053/400/300" alt="Ongoing Support">
+            </div>
+          </div>
+        </div>
+        
+        <div class="services-cta">
+          <a href="#schedule" class="btn-primary" data-en="Schedule a call" data-sr="Zakaži poziv">Schedule a call</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process-section">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="title-line" data-en="From First Idea to" data-sr="Od prve ideje do">From First Idea to</span>
+          <span class="title-line" data-en="Final Launch" data-sr="Konačnog Pokretanja">Final Launch</span>
+        </h2>
+        <p class="section-subtitle" data-en="We make the website process simple, clear, and fast. Here's what working with UN Design looks like, from concept to live product." data-sr="Činimo proces sajta jednostavnim, jasnim i brzim. Evo kako izgleda rad sa UN Design-om, od koncepta do živog proizvoda.">
+          We make the website process simple, clear, and fast.<br>
+          Here's what working with UN Design looks like, from concept to live product.
+        </p>
+        
+        <div class="process-steps">
+          <div class="process-step">
+            <div class="step-number">01</div>
+            <h3 data-en="Idea" data-sr="Ideja">Idea</h3>
+            <p data-en="We start with a discovery session to understand your goals, audience, and vision — setting the stage for everything ahead." data-sr="Počinjemo sa sesijom otkrivanja da razumemo vaše ciljeve, publiku i viziju — postavljajući pozornicu za sve što je pred nama.">We start with a discovery session to understand your goals, audience, and vision — setting the stage for everything ahead.</p>
+          </div>
+          
+          <div class="process-step">
+            <div class="step-number">02</div>
+            <h3 data-en="Web Design" data-sr="Web Dizajn">Web Design</h3>
+            <p data-en="We create wireframes and visual mockups tailored to your brand — focused on usability, clarity, and conversion." data-sr="Pravimo wireframe-ove i vizuelne mockup-ove prilagođene vašem brendu — fokusirani na upotrebljivost, jasnoću i konverziju.">We create wireframes and visual mockups tailored to your brand — focused on usability, clarity, and conversion.</p>
+          </div>
+          
+          <div class="process-step">
+            <div class="step-number">03</div>
+            <h3 data-en="Development" data-sr="Razvoj">Development</h3>
+            <p data-en="Your design is brought to life in Framer — built for speed, mobile-responsiveness, and SEO optimization from day one." data-sr="Vaš dizajn oživljava u Framer-u — napravljen za brzinu, mobilnu responzivnost i SEO optimizaciju od prvog dana.">Your design is brought to life in Framer — built for speed, mobile-responsiveness, and SEO optimization from day one.</p>
+          </div>
+          
+          <div class="process-step">
+            <div class="step-number">04</div>
+            <h3 data-en="Launch" data-sr="Pokretanje">Launch</h3>
+            <p data-en="Once the site is ready, we'll guide you through it and help you launch confidently; with training and post-launch support." data-sr="Kada je sajt spreman, vodićemo vas kroz njega i pomoći vam da se samouvereno pokrenete; sa obukom i podrškom nakon pokretanja.">Once the site is ready, we'll guide you through it and help you launch confidently; with training and post-launch support.</p>
+            <a href="#pricing" class="btn-secondary" data-en="Find your plan" data-sr="Pronađi svoj plan">Find your plan</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose-section">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="title-line" data-en="Why Brands" data-sr="Zašto brendovi">Why Brands</span>
+          <span class="title-line" data-en="Choose Us" data-sr="Biraju nas">Choose Us</span>
+        </h2>
+        <p class="section-subtitle" data-en="We combine creative direction, technical skill, and serious speed to deliver websites that work — beautifully." data-sr="Kombinujemo kreativnu režiju, tehničku veštinu i ozbiljnu brzinu da isporučimo sajtove koji rade — lepo.">
+          We combine creative direction, technical skill, and serious speed to deliver websites that work — beautifully.
+        </p>
+        
+        <div class="features-grid">
+          <div class="feature-card">
+            <h3 data-en="Award-Winning Website" data-sr="Nagradjivani sajt">Award-Winning Website</h3>
+            <p data-en="Recognized by industry leaders for innovation, quality, and impact. This isn't freelance — this is studio-grade work." data-sr="Prepoznati od strane lidera industrije za inovaciju, kvalitet i uticaj. Ovo nije freelance — ovo je studio-nivo rada.">Recognized by industry leaders for innovation, quality, and impact. This isn't freelance — this is studio-grade work.</p>
+          </div>
+          
+          <div class="feature-card">
+            <h3 data-en="Certified Framer Experts" data-sr="Certificirani Framer eksperti">Certified Framer Experts</h3>
+            <p data-en="We're not just using Framer, we're certified by the platform itself. Speed, performance, and flexibility? Built in." data-sr="Ne koristimo samo Framer, certificirani smo od strane same platforme. Brzina, performanse i fleksibilnost? Ugrađeno.">We're not just using Framer, we're certified by the platform itself. Speed, performance, and flexibility? Built in.</p>
+          </div>
+          
+          <div class="feature-card">
+            <h3 data-en="Strategic by Design" data-sr="Strateški po dizajnu">Strategic by Design</h3>
+            <p data-en="We build with intent — every page is structured with purpose, logic, and aligned with your business goals." data-sr="Gradimo sa namerom — svaka stranica je strukturirana sa svrhom, logikom i usklađena sa vašim poslovnim ciljevima.">We build with intent — every page is structured with purpose, logic, and aligned with your business goals.</p>
+          </div>
+          
+          <div class="feature-card">
+            <h3 data-en="Trusted by Global Clients" data-sr="Poverenje globalnih klijenata">Trusted by Global Clients</h3>
+            <p data-en="Startups, SaaS, and agencies in 10+ countries rely on us for consistent quality, fast delivery, and long-term design partnerships." data-sr="Startupovi, SaaS i agencije u 10+ zemalja se oslanjaju na nas za konzistentan kvalitet, brzu isporuku i dugoročna dizajn partnerstva.">Startups, SaaS, and agencies in 10+ countries rely on us for consistent quality, fast delivery, and long-term design partnerships.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section" id="pricing">
+    <section class="pricing-section" id="pricing">
+      <div class="container">
+        <h2 class="section-title" data-en="Unlock Your Growth" data-sr="Otključaj svoj rast">Unlock Your Growth</h2>
+        <p class="section-subtitle" data-en="Enjoy the full experience with no hidden fees or surprises!" data-sr="Uživaj u punom iskustvu bez skrivenih troškova ili iznenađenja!">Enjoy the full experience with no hidden fees or surprises!</p>
+        
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 data-en="Project-Based Website" data-sr="Sajt na osnovu projekta">Project-Based Website</h3>
+            <div class="price">
+              <span class="currency">€</span>
+              <span class="amount">300</span>
+              <span class="period" data-en="/ Starting From" data-sr="/ Počevši od">/ Starting From</span>
+            </div>
+            <p class="pricing-description" data-en="One-time project scope — from concept to launch." data-sr="Jednokratni obim projekta — od koncepta do pokretanja.">One-time project scope — from concept to launch.</p>
+          </div>
+          
+          <div class="pricing-features">
+            <h4 data-en="What's included" data-sr="Šta je uključeno">What's included</h4>
+            <ul>
+              <li data-en="Custom design tailored to your brand" data-sr="Prilagođeni dizajn prilagođen vašem brendu">Custom design tailored to your brand</li>
+              <li data-en="Built in Framer (with CMS, animations, SEO)" data-sr="Napravljeno u Framer-u (sa CMS-om, animacijama, SEO)">Built in Framer (with CMS, animations, SEO)</li>
+              <li data-en="1–2 week turnaround" data-sr="Rok isporuke 1-2 nedelje">1–2 week turnaround</li>
+              <li data-en="Strategy + launch support" data-sr="Strategija + podrška za pokretanje">Strategy + launch support</li>
+              <li data-en="No subscription. No commitment." data-sr="Bez pretplate. Bez obaveze.">No subscription. No commitment.</li>
+            </ul>
+          </div>
+          
+          <a href="#schedule" class="btn-primary" data-en="Schedule a call" data-sr="Zakaži poziv">Schedule a call</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+      <div class="container">
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <p data-en="&quot;We've worked with dozens of teams — but UN Design nailed both design and communication. Straightforward, modern, and always one step ahead.&quot;" data-sr="&quot;Radili smo sa desetinama timova — ali UN Design je pogodio i dizajn i komunikaciju. Direktno, moderno i uvek korak ispred.&quot;">"We've worked with dozens of teams — but UN Design nailed both design and communication. Straightforward, modern, and always one step ahead."</p>
+            <div class="testimonial-author">
+              <strong data-en="Emily Roberts" data-sr="Emily Roberts">Emily Roberts</strong> – <span data-en="CMO, Nova Studio" data-sr="CMO, Nova Studio">CMO, Nova Studio</span>
+            </div>
+          </div>
+          
+          <div class="testimonial-card">
+            <p data-en="&quot;Our Framer website blew expectations. Their team felt like an extension of ours — smart, fast, and genuinely invested in our success.&quot;" data-sr="&quot;Naš Framer sajt je prevazišao očekivanja. Njihov tim se osećao kao produžetak našeg — pametan, brz i istinski zainteresovan za naš uspeh.&quot;">"Our Framer website blew expectations. Their team felt like an extension of ours — smart, fast, and genuinely invested in our success."</p>
+            <div class="testimonial-author">
+              <strong data-en="Daniel M." data-sr="Daniel M.">Daniel M.</strong> – <span data-en="Creative Director, North & Co" data-sr="Kreativni direktor, North & Co">Creative Director, North & Co</span>
+            </div>
+          </div>
+          
+          <div class="testimonial-card">
+            <p data-en="&quot;Working with UN Design felt effortless. They understood our vision, solved problems before we noticed them, and delivered beyond what we asked.&quot;" data-sr="&quot;Rad sa UN Design-om je bio bez napora. Razumeli su našu viziju, rešili probleme pre nego što smo ih primetili, i isporučili više od onoga što smo tražili.&quot;">"Working with UN Design felt effortless. They understood our vision, solved problems before we noticed them, and delivered beyond what we asked."</p>
+            <div class="testimonial-author">
+              <strong data-en="Olivia Carter" data-sr="Olivia Carter">Olivia Carter</strong> – <span data-en="Founder, Luno" data-sr="Osnivač, Luno">Founder, Luno</span>
+            </div>
+          </div>
+          
+          <div class="testimonial-card">
+            <p data-en="&quot;We launched in half the time we expected — and the site instantly felt premium. Design, UX, and delivery were on point from start to finish.&quot;" data-sr="&quot;Pokrenuli smo za pola vremena koje smo očekivali — i sajt je odmah delovao premium. Dizajn, UX i isporuka su bili tačni od početka do kraja.&quot;">"We launched in half the time we expected — and the site instantly felt premium. Design, UX, and delivery were on point from start to finish."</p>
+            <div class="testimonial-author">
+              <strong data-en="Jason Lee" data-sr="Jason Lee">Jason Lee</strong> – <span data-en="Product Manager, Satori" data-sr="Product Manager, Satori">Product Manager, Satori</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+      <div class="container">
+        <h2 class="section-title" data-en="Frequently Asked Questions" data-sr="Često postavljena pitanja">Frequently Asked Questions</h2>
+        <p class="section-subtitle" data-en="This is different we get that, you may have questions, here are some answers." data-sr="Razumemo da je ovo drugačije, možda imate pitanja, evo nekoliko odgovora.">This is different we get that, you may have questions, here are some answers.</p>
+        
+        <div class="faq-grid">
+          <div class="faq-item">
+            <h3 data-en="How long does it take to build a website?" data-sr="Koliko dugo traje izrada sajta?">How long does it take to build a website?</h3>
+            <p data-en="Typically 1-2 weeks from concept to launch, depending on complexity and requirements." data-sr="Obično 1-2 nedelje od koncepta do pokretanja, zavisno od složenosti i zahteva.">Typically 1-2 weeks from concept to launch, depending on complexity and requirements.</p>
+          </div>
+          
+          <div class="faq-item">
+            <h3 data-en="What platform do you use?" data-sr="Koju platformu koristite?">What platform do you use?</h3>
+            <p data-en="We're certified Framer experts, building high-performance websites with custom animations and CMS." data-sr="Mi smo certificirani Framer eksperti, gradimo visokoučinkovite sajtove sa prilagođenim animacijama i CMS-om.">We're certified Framer experts, building high-performance websites with custom animations and CMS.</p>
+          </div>
+          
+          <div class="faq-item">
+            <h3 data-en="What's included in the project price?" data-sr="Šta je uključeno u cenu projekta?">What's included in the project price?</h3>
+            <p data-en="Custom design, Framer development, CMS setup, SEO optimization, and launch support." data-sr="Prilagođeni dizajn, Framer razvoj, CMS postavljanje, SEO optimizacija i podrška za pokretanje.">Custom design, Framer development, CMS setup, SEO optimization, and launch support.</p>
+          </div>
+          
+          <div class="faq-item">
+            <h3 data-en="Can you redesign an existing website?" data-sr="Možete li redizajnirati postojeći sajt?">Can you redesign an existing website?</h3>
+            <p data-en="Absolutely! We can redesign and rebuild your existing site with improved performance and design." data-sr="Apsolutno! Možemo redizajnirati i ponovo izgraditi vaš postojeći sajt sa poboljšanim performansama i dizajnom.">Absolutely! We can redesign and rebuild your existing site with improved performance and design.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section class="schedule-section" id="schedule">
+      <div class="container">
+        <h2 class="section-title" data-en="Ready to Get Started?" data-sr="Spremni da počnete?">Ready to Get Started?</h2>
+        <p class="section-subtitle" data-en="Book a free consultation call to discuss your project." data-sr="Zakažite besplatan konsultativni poziv da razgovaramo o vašem projektu.">Book a free consultation call to discuss your project.</p>
+        <div class="calendar-container">
+          <iframe
+            src="https://koalendar.com/e/meet-with-un-design?embed=true"
+            width="100%"
+            height="600"
+            frameborder="0"
+            scrolling="no">
+          </iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3>UN Design</h3>
+          <p data-en="We craft fast, premium websites for startups, agencies, and global brands." data-sr="Pravimo brze, premium sajtove za startupove, agencije i globalne brendove.">We craft fast, premium websites for startups, agencies, and global brands.</p>
+          <div class="footer-contact">
+            <li><a href="mailto:un.studio.rs@gmail.com" data-en="un.studio.rs@gmail.com" data-sr="Pošalji email">un.studio.rs@gmail.com</a></li>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4 data-en="Portfolio" data-sr="Portfolio">Portfolio</h4>
+            <ul>
+              <li><a href="#portfolio" data-en="View Projects" data-sr="Pogledaj projekte">View Projects</a></li>
+              <li><a href="#pricing" data-en="Pricing" data-sr="Cene">Pricing</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-column">
+            <h4 data-en="About" data-sr="O nama">About</h4>
+            <ul>
+              <li><a href="#about" data-en="Our Story" data-sr="Naša priča">Our Story</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-column">
+            <h4 data-en="Contact" data-sr="Kontakt">Contact</h4>
+            <ul>
+              <li><a href="#schedule" data-en="Schedule Call" data-sr="Zakaži poziv">Schedule Call</a></li>
+              <li><a href="mailto:un.studio.rs@gmail.com" data-en="Email Us" data-sr="Pošalji email">Email Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p data-en="&copy; 2025 UN Design. All rights reserved." data-sr="&copy; 2025 UN Design. Sva prava zadržana.">&copy; 2025 UN Design. All rights reserved.</p>
       </div>
     </div>
-  </section>
-  
-<footer id="footer" class="site-footer">
-  <script>
-    let currentLang = 'en';
-    document.getElementById('langToggle').addEventListener('click', () => {
-      currentLang = currentLang === 'en' ? 'sr' : 'en';
-      document.getElementById('langToggle').textContent = currentLang === 'en' ? '🇺🇸 EN' : '🇷🇸 SR';
-      document.querySelectorAll('[data-en]').forEach(el => {
-        el.textContent = el.getAttribute(`data-${currentLang}`);
-      });
-    });
-  </script>
-  <script src="https://unpkg.com/swiper@10/swiper-bundle.min.js"></script>
-  <script>
-    const swiper = new Swiper('.mySwiper', {
-      effect: 'coverflow',
-      grabCursor: true,
-      centeredSlides: true,
-      slidesPerView: 'auto',
-      coverflowEffect: {
-        rotate: 50,
-        stretch: 0,
-        depth: 100,
-        modifier: 1,
-        slideShadows: true,
-      },
-      pagination: {
-        el: '.swiper-pagination',
-      },
-    });
-  </script>
-  <div class="footer-content">
-    <div class="footer-left">
-      <h3>UN Design</h3>
-      <p data-en="We create beautiful and effective websites for modern brands." 
-         data-sr="Pravimo lepe i funkcionalne sajtove za moderne brendove.">
-        We create beautiful and effective websites for modern brands.
-      </p>
-      <div class="footer-socials">
-        <a href="https://www.instagram.com/un.design.studio/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="mailto:un.studio.rs@gmail.com" aria-label="Email">
-          <i class="fas fa-envelope"></i>
-        </a>
-      </div>
-    </div>
-    <div class="footer-links">
-      <h4 data-en="Quick Links" data-sr="Brzi Linkovi">Quick Links</h4>
-      <ul>
-        <li><a href="#about" data-en="About" data-sr="O Nama">About</a></li>
-        <li><a href="#services" data-en="Services" data-sr="Usluge">Services</a></li>
-        <li><a href="#schedule" data-en="Schedule" data-sr="Zakaži">Schedule</a></li>
-        <li><a href="#contact" data-en="Contact" data-sr="Kontakt">Contact</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <p data-en="© 2025 UN Design. All rights reserved." 
-       data-sr="© 2025 UN Design. Sva prava zadržana.">
-       © 2025 UN Design. All rights reserved.
-    </p>
-  </div>
-</footer>
-<script>
-  const ring = document.getElementById("ring");
-  let angle = 0;
-  const numImages = ring.children.length;
-  const deg = 360 / numImages;
+  </footer>
 
-  for (let i = 0; i < numImages; i++) {
-    ring.children[i].style.transform = `rotateY(${i * deg}deg) translateZ(400px)`;
-  }
-
-  function rotateRing() {
-    angle += deg;
-    ring.style.transform = `rotateY(-${angle}deg)`;
-  }
-
-  setInterval(rotateRing, 3000);
-</script>
-
+  <script src="script.js"></script>
 </body>
 </html>
